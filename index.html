@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="pokemon">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <link type="stylesheet" href="style.css"
+  </head>
+  <body ng-controller = "mainCtrl">
+    
+    <input type = "number" ng-model="pokemonNumber">
+    <button ng-click="getThePokemon(pokemonNumber)">Find Pokemon</button>
+
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mainCtrl.js"></script>
+    <script src="js/pokemonSvc.js"></script>
+  </body>
+</html>
