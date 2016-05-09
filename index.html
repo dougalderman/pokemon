@@ -9,6 +9,15 @@
     
     <input type = "number" ng-model="pokemonNumber">
     <button ng-click="getThePokemon(pokemonNumber)">Find Pokemon</button>
+	 <br> 
+	 Pokemon: {{pokemon.name}}
+	 <br><br> 
+	<button ng-click="getLotsOfPokemons(10)">Get first 10 Pokemons</button> 
+	 <br> 
+	  Pokemons:
+	 <ul>
+	  	<li ng-repeat = "poke in allPokemon">{{poke.name}}</li>
+	 </ul>
 
     <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.js"></script>
     <script src="js/app.js"></script>
